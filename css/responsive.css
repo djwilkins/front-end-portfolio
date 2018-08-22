@@ -1,0 +1,88 @@
+/* INITIAL FLEXBOX SETTINGS */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-01,
+.project-02,
+.project-03 {
+    order: 10;
+}
+
+/* BEGIN MEDIA QUERY BREAK POINTS */
+
+@media screen and (max-width: 424px) {
+    .header-name {
+        font-size: 40px;
+    }
+
+    .header-logo {
+        width: 35px;
+        margin: 15px 0px 0px 5px;
+    }
+
+    .project-01,
+    .project-02,
+    .project-03 {
+        width: 100%;
+    }
+
+    .project-01,
+    .project-02 {
+        margin-bottom: 7.5%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 774px) {
+    .header-logo {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .project-01,
+    .project-02 {
+        width: 47.5%;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .project-01 {
+        margin-right: 5%;
+    }
+
+    .project-url {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .project-01,
+    .project-02,
+    .project-03 {
+        width: 30%;
+    }
+
+    .project-01 {
+        order: 10;
+        margin-right: 2.5%;
+    }
+
+    .project-02 {
+        margin: 0% 2.5%;
+    }
+
+    .project-03 {
+        margin-left: 2.5%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .header,
+    main {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
